@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="caf"
+           fetch="https://source.codeaurora.org/quic/la"
+           revision="refs/tags/LA.UM.9.16.r1-03300-MANNAR.0" />
+
+  <remote  name="dev"
+           fetch="../ev-sm4350-dev/"
+           revision="staging/rebase" />
+ 
+  <default revision="staging/rebase"
+           remote="dev"
+           sync-j="4" />
+
+  <project path="kernel/oneplus/sm4350" name="android_kernel_msm-5.4" groups="qcom,kernel" remote="github" revision="staging/rebase" />
+  <project path="kernel/oneplus/sm4350/arch/arm64/boot/dts/vendor" name="android_kernel_qcom_devicetree" groups="qcom,kernel" remote="github" revision="oneplus/SM4350_R_11.0" />
+  <project path="kernel/oneplus/sm4350/techpack/audio" name="android_vendor_opensource_audio-kernel" groups="qcom,kernel" remote="github" revision="staging/rebase" />
+  <project path="kernel/oneplus/sm4350/techpack/camera" name="android_vendor_opensource_camera-kernel" groups="qcom,kernel" remote="github" revision="staging/rebase" />
+  <project path="kernel/oneplus/sm4350/techpack/dataipa" name="android_vendor_opensource_dataipa" groups="qcom,kernel" remote="github" revision="staging/rebase" />
+  <project path="kernel/oneplus/sm4350/techpack/datarmnet" name="platform/vendor/qcom/opensource/datarmnet" groups="qcom,kernel" remote="caf" />
+  <project path="kernel/oneplus/sm4350/techpack/datarmnet-ext" name="platform/vendor/qcom/opensource/datarmnet-ext" groups="qcom,kernel" remote="caf" />
+  <project path="kernel/oneplus/sm4350/techpack/display" name="android_vendor_opensource_display-drivers" groups="qcom,kernel" remote="github" revision="staging/rebase" />
+  <project path="kernel/oneplus/sm4350/techpack/oneplus" name="android_vendor_oneplus_opensource_kernel" groups="qcom,kernel" remote="github" revision="oneplus/SM4350_R_11.0" />
+  <project path="kernel/oneplus/sm4350/techpack/sched" name="android_vendor_opensource_sched" groups="qcom,kernel" remote="github" revision="staging/rebase" />
+  <project path="kernel/oneplus/sm4350/techpack/video" name="platform/vendor/opensource/video-driver" groups="qcom,kernel" remote="caf" />
+
+</manifest>
